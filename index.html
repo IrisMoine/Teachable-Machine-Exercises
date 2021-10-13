@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Getting Started with ml5.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+    <script src="js/App.js" type="text/javascript"></script>
+
+    <style>
+      body {
+        /* background: #0a2a43; */
+
+        background: rgb(245, 232, 190);
+        min-height: 1500px;
+        margin: 10%;
+      }
+      #green {
+        background-color: rgb(75, 212, 75);
+        border-radius: 50%;
+        padding: 2%;
+        transition-duration: 0.4s;
+        outline: none;
+      }
+      #green:hover {
+        transform: scale(1.5);
+      }
+      #violet {
+        background-color: rgb(238, 236, 130);
+        border-radius: 50%;
+        padding: 2%;
+        transition-duration: 0.4s;
+      }
+      #violet:hover {
+        transform: scale(1.5);
+      }
+      #red {
+        background-color: rgb(156, 8, 112);
+        border-radius: 50%;
+        padding: 2%;
+        transition-duration: 0.4s;
+      }
+      #red:hover {
+        transform: scale(1.5);
+      }
+      #orange {
+        background-color: rgb(255, 166, 0);
+        border-radius: 50%;
+        padding: 2%;
+        transition-duration: 0.4s;
+      }
+      #orange:hover {
+        transform: scale(1.5);
+      }
+      span {
+        font-family: sans-serif;
+        padding: 20px;
+      }
+      #message {
+        font-family: sans-serif;
+        margin-top: 50px;
+        font-size: 50px;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <video width="640" height="480"></video>
+    <div id="interaction">
+      <button id="green">Adventure</button><span id="green_count">0</span>
+      <button id="violet">Holidays</button><span id="violet_count">0</span>
+      <button id="red">Coffee Break</button><span id="red_count">0</span>
+      <button id="orange">Cleaning</button><span id="orange_count">0</span>
+      <button id="train">train</button>
+    </div>
+
+    <div id="message">&nbsp;</div>
+
+    <input type="file" name="files" id="loader" multiple />
+  </body>
+</html>
